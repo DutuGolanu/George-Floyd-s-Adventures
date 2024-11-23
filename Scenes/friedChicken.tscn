@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgfjdls33gqnl"]
+
+[ext_resource type="Script" path="res://Scripts/FallingObject.cs" id="1_gammg"]
+[ext_resource type="Texture2D" uid="uid://c7u57bcwqvy56" path="res://Sprites/スクリーンショット_2024-11-20_195916-removebg-preview (1).png" id="2_r6px2"]
+
+[node name="friedChicken" type="StaticBody2D"]
+scale = Vector2(0.8, 0.8)
+script = ExtResource("1_gammg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_r6px2")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-51, 64, -31, 60, -23, 63, -21, 59, -9, 58, 12, 61, 33, 67, 42, 72, 46, 60, 63, 66, 69, 77, 89, 90, 107, 93, 123, 95, 135, 82, 156, 47, 138, 30, 107, 23, 91, 9, 87, -1, 78, -1, 59, -5, 49, -12, 57, -16, 32, -23, 23, -41, -11, -66, -44, -90, -83, -90, -109, -80, -125, -65, -141, -35, -148, -17, -130, 16, -116, 47, -65, 52)

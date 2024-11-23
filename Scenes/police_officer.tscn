@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8yhgqvldqomi"]
+
+[ext_resource type="Texture2D" uid="uid://c4r6cdhg4a2lu" path="res://Sprites/スクリーンショット_2024-11-21_103908-removebg-preview.png" id="1_8t63g"]
+[ext_resource type="Script" path="res://Scripts/FallingObject.cs" id="2_rdaow"]
+
+[node name="policeOfficer" type="StaticBody2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("2_rdaow")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8t63g")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(243, 235, 214, 147, 137, -8, 82, -48, -13, -82, -17, -145, -34, -172, -71, -230, -91, -235, -117, -230, -158, -210, -175, -184, -167, -157, -134, -69, -104, -34, -144, 0, -150, 240)

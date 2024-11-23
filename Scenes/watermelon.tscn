@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy8jepbs7r08c"]
+
+[ext_resource type="Texture2D" uid="uid://b5nimolctl1w3" path="res://Sprites/スクリーンショット_2024-11-20_200454-removebg-preview.png" id="1_76rg7"]
+[ext_resource type="Script" path="res://Scripts/FallingObject.cs" id="1_mccai"]
+
+[node name="watermelon" type="StaticBody2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_mccai")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_76rg7")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-259, 98, -61, 176, 53, 181, 180, 138, 261, 73, -16, -180)
