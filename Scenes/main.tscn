@@ -85,9 +85,8 @@ texture = ExtResource("4_jdnc8")
 
 [node name="Score" type="Label" parent="."]
 texture_filter = 1
-layout_mode = 1
-offset_right = 40.0
-offset_bottom = 23.0
+offset_right = 57.0
+offset_bottom = 137.0
 theme = SubResource("Theme_n86gs")
 theme_override_font_sizes/font_size = 100
 text = "0"
@@ -187,16 +186,6 @@ rotation = -3.14159
 scale = Vector2(0.6, 0.6)
 texture_normal = ExtResource("6_r0cax")
 action = "left"
-
-[node name="Line2D" type="Line2D" parent="."]
-position = Vector2(-5, 0)
-points = PackedVector2Array(0, 0, 0, 1080)
-default_color = Color(0, 0, 0, 1)
-
-[node name="Line2D2" type="Line2D" parent="."]
-position = Vector2(1925, 0)
-points = PackedVector2Array(0, 0, 0, 1080)
-default_color = Color(0, 0, 0, 1)
 
 [node name="SpawnTimer" type="Timer" parent="."]
 one_shot = true

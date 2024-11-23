@@ -88,7 +88,7 @@ public partial class Main : Control
     }
     public override void _Input(InputEvent @event)
     {
-        if (@event is InputEventMouseButton && @event.IsPressed() && !gameRunning) {
+        if (@event is InputEventMouseButton && @event.IsPressed() && !gameRunning && !gameOverPanel.IsVisibleInTree()) {
             gameRunning = true;
             panel.Hide();
         }
